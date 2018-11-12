@@ -1,6 +1,7 @@
 // Used snowbillr.github.io/blog/2018-04-09-a-modern-web-development-setup-for-phaser-3/ to assist in creation of this.
 
 const path = require('path');
+const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
@@ -25,7 +26,7 @@ module.exports = {
                         presets: ['@babel/env']
                     }
                 }
-            }
+            },
         ]
     },
 
@@ -40,8 +41,15 @@ module.exports = {
         new CopyWebpackPlugin([
             {
                 from: path.resolve(__dirname, 'src/index.html'),
-                to: path.resolve(__dirname, 'build')
+                to: path.resolve(__dirname, 'build'),
             }
-        ])
+        ]),
+
+        // This came from the guide listed at the top of the file.
+        // THe idea is to only have webpack include the relevant renderer of Phaser.
+        new webpack.DefinePlugin({
+            'typeof CANVAS_RENDERER': JSON.stringify(false),
+            'typeof WEBGL_RENDERER': JSON.stringify(true),
+        }),
     ]
 };
