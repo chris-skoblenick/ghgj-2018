@@ -23,5 +23,16 @@
   "bugs": {
     "url": "https://github.com/chris-skoblenick/ghgj-2018/issues"
   },
-  "homepage": "https://github.com/chris-skoblenick/ghgj-2018#readme"
+  "homepage": "https://github.com/chris-skoblenick/ghgj-2018#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
+    "phaser": "^3.15.1",
+    "react": "^16.6.1",
+    "webpack": "^4.25.1",
+    "webpack-dev-server": "^3.1.10"
+  }
 }
