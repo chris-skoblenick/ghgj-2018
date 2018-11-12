@@ -1,0 +1,27 @@
+{
+  "name": "ghgj-2018",
+  "version": "0.0.1",
+  "description": "GitHub Gamejam 2018 (hybrid theme)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-skoblenick/ghgj-2018.git"
+  },
+  "keywords": [
+    "github",
+    "gamejam",
+    "2018",
+    "javascript",
+    "react",
+    "phaser"
+  ],
+  "author": "Chris Skoblenick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris-skoblenick/ghgj-2018/issues"
+  },
+  "homepage": "https://github.com/chris-skoblenick/ghgj-2018#readme"
+}
